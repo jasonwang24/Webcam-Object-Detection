@@ -1,10 +1,10 @@
 #Import necessary libraries
 import cv2
 from darkflow.net.build import TFNet
-import numpy as
+import numpy
 import time
 
-#threshold specifies the confidence needed to create a box, model specifies the location, load is to setup the weights,  gpu utilizes the graphics card
+#threshold specifies the confidence needed to create a box, model specifies the location, load is to setup the weights,  gpu utilizes the graphics card (I have a NVIDIA GeForce)
 options = {'threshold': 0.2,'model': 'tiny/yolov2.cfg','load': 'bin/yolov2.weights','gpu': 1.0}
 
 #This initializes the model to make predictions
